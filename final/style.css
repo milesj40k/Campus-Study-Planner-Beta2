@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+#viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.miles-clark-homepage {
+  background-color: var(--white);
+  overflow: hidden;
+  width: 1440px;
+  height: 1250px;
+  position: relative;
+  transform-origin: top left;
+}
+
+/* ---------- Nav buttons ---------- */
+
+.miles-clark-homepage .group {
+  position: absolute;
+  top: 113px;
+  left: 1191px;
+  width: 246px;
+  height: 74px;
+}
+
+.miles-clark-homepage .rectangle {
+  top: 0;
+  left: 0;
+  width: 244px;
+  height: 74px;
+  background-color: var(--black);
+  position: absolute;
+  border-radius: 12px;
+}
+
+.miles-clark-homepage .schedule {
+  position: absolute;
+  top: 14px;
+  left: 21px;
+  width: 214px;
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
+  font-weight: 500;
+  color: var(--red);
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.miles-clark-homepage .div {
+  position: absolute;
+  top: 22px;
+  left: 956px;
+  width: 228px;
+  height: 81px;
+}
+
+.miles-clark-homepage .rectangle-2 {
+  top: 0;
+  left: 1px;
+  width: 226px;
+  height: 81px;
+  background-color: var(--black);
+  position: absolute;
+  border-radius: 12px;
+}
+
+.miles-clark-homepage .text-wrapper-2 {
+  position: absolute;
+  top: 14px;
+  left: 31px;
+  width: 183px;
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
+  font-weight: 500;
+  color: var(--red);
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.miles-clark-homepage .group-2 {
+  position: absolute;
+  top: 22px;
+  left: 703px;
+  width: 246px;
+  height: 81px;
+}
+
+.miles-clark-homepage .rectangle-3 {
+  top: 0;
+  left: 0;
+  width: 244px;
+  height: 81px;
+  background-color: var(--black);
+  position: absolute;
+  border-radius: 12px;
+}
+
+.miles-clark-homepage .study-groups {
+  position: absolute;
+  top: 14px;
+  left: 9px;
+  width: 226px;
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
+  font-weight: 700;
+  color: var(--red);
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.miles-clark-homepage .group-3 {
+  position: absolute;
+  top: 22px;
+  left: 1191px;
+  width: 246px;
+  height: 81px;
+  background-color: var(--black);
+  border-radius: 12px;
+}
+
+.miles-clark-homepage .text-wrapper-5 {
+  position: absolute;
+  top: 18px;
+  left: 21px;
+  width: 226px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 500;
+  color: var(--red);
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* ---------- Logo ---------- */
+
+.miles-clark-homepage .rectangle-4 {
+  top: 28px;
+  left: 17px;
+  width: 87px;
+  height: 86px;
+  background-color: var(--red);
+  position: absolute;
+  border-radius: 12px;
+}
+
+.miles-clark-homepage .text-wrapper-6 {
+  position: absolute;
+  top: 30px;
+  left: 49px;
+  width: 79px;
+  font-family: "Jaro", "Fjalla One", sans-serif;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.miles-clark-homepage .text-wrapper-7 {
+  position: absolute;
+  top: 34px;
+  left: 104px;
+  font-family: "Fjalla One", Helvetica, sans-serif;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/* ---------- Hero ---------- */
+
+.miles-clark-homepage .find-your-study {
+  position: absolute;
+  top: 226px;
+  left: 37px;
+  width: 854px;
+  margin: 0;
+  font-family: "Fjalla One", Helvetica, sans-serif;
+  font-weight: 400;
+  color: var(--red);
+  font-size: 105px;
+  letter-spacing: 5.25px;
+  line-height: normal;
+}
+
+.miles-clark-homepage img {
+  position: absolute;
+  top: 223px;
+  left: 917px;
+  width: 470px;
+  height: 470px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.miles-clark-homepage .p {
+  position: absolute;
+  top: 622px;
+  left: 37px;
+  width: 919px;
+  margin: 0;
+  font-family: "Fira Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* ---------- Search bar ---------- */
+
+.miles-clark-homepage .rectangle-5 {
+  top: 738px;
+  left: 45px;
+  width: 895px;
+  height: 89px;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  position: absolute;
+  border-radius: 12px;
+}
+
+.miles-clark-homepage .rectangle-5:focus-within {
+  border-color: var(--pink);
+  box-shadow: 0 0 0 4px rgba(214, 48, 79, 0.25);
+}
+
+.miles-clark-homepage .text-wrapper-9 {
+  position: absolute;
+  top: 754px;
+  left: 61px;
+  width: 640px;
+  height: 56px;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Fjalla One", Helvetica, sans-serif;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 36px;
+  letter-spacing: 1.8px;
+  line-height: normal;
+}
+
+.miles-clark-homepage .text-wrapper-9::placeholder {
+  color: var(--black);
+  opacity: 1;
+}
+
+.miles-clark-homepage .group-4 {
+  position: absolute;
+  top: 754px;
+  left: 720px;
+  width: 194px;
+  height: 56px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--pink);
+  background-image: url(./public/external/rectangle143813-uwpe.svg);
+  background-size: 100% 100%;
+  font-family: "Fjalla One", Helvetica, sans-serif;
+  font-weight: 400;
+  color: var(--white);
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.miles-clark-homepage .group-4:hover {
+  filter: brightness(0.9);
+}
+
+.miles-clark-homepage .search-error {
+  position: absolute;
+  top: 836px;
+  left: 45px;
+  margin: 0;
+  font-family: "Fira Sans", Helvetica, sans-serif;
+  font-size: 24px;
+  color: var(--pink);
+}
+
+/* ---------- Results ---------- */
+
+.miles-clark-homepage .results {
+  position: absolute;
+  top: 880px;
+  left: 45px;
+  width: 895px;
+}
+
+.miles-clark-homepage .results-title {
+  margin: 0 0 16px;
+  font-family: "Fjalla One", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 44px;
+  color: var(--red);
+}
+
+.miles-clark-homepage .group-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 18px 24px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-family: "Fira Sans", Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+.miles-clark-homepage .group-card small {
+  display: block;
+  margin-top: 4px;
+  font-size: 20px;
+  color: var(--muted);
+}
+
+.miles-clark-homepage .group-card button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--black);
+  color: var(--red);
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  cursor: pointer;
+}

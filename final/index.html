@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raider Study Partner</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Fira+Sans:wght@400&family=IBM+Plex+Sans:wght@500;700&family=Inter:wght@400;500&family=Jaro:opsz@6..72&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="viewport">
+    <div class="miles-clark-homepage" id="stage">
+
+      <a class="group" href="#">
+        <div class="rectangle"></div>
+        <div class="schedule">Schedule</div>
+      </a>
+
+      <a class="div" href="#">
+        <div class="rectangle-2"></div>
+        <div class="text-wrapper-2">Contact us</div>
+      </a>
+
+      <a class="group-2" href="#">
+        <div class="rectangle-3"></div>
+        <div class="study-groups">Study Groups</div>
+      </a>
+
+      <a class="group-3" href="#">
+        <div class="text-wrapper-5">Campus life</div>
+      </a>
+
+      <div class="rectangle-4"></div>
+      <div class="text-wrapper-6">R</div>
+      <div class="text-wrapper-7">aider Study Partner</div>
+
+      <h1 class="find-your-study">
+        Find your study<br />group before the<br />exam finds you
+      </h1>
+
+      <img src="../images/redhand.jpg" alt="red hand" />
+       
+
+
+      <p class="p">
+        Search by the course you’re taking and join Red Raiders studying the
+        same material on campus or online!
+      </p>
+
+      <form id="searchForm" autocomplete="off">
+        <div class="rectangle-5"></div>
+        <input
+          class="text-wrapper-9"
+          id="courseInput"
+          type="text"
+          placeholder="Type your course here...."
+          aria-label="Course name"
+        />
+        <button class="group-4" type="submit">Search here</button>
+      </form>
+
+      <p class="search-error" id="error" role="alert"></p>
+      <section class="results" id="results" aria-live="polite"></section>
+
+    </div>
+  </div>
+
+  <script>
+    const stage = document.getElementById("stage");
+    const viewport = document.getElementById("viewport");
+
+    function fitToWindow() {
+      const scale = viewport.clientWidth / 1440;
+      stage.style.transform = "scale(" + scale + ")";
+      viewport.style.height = stage.offsetHeight * scale + "px";
+    }
+    window.addEventListener("resize", fitToWindow);
+    fitToWindow();
+
+    const form = document.getElementById("searchForm");
+    const input = document.getElementById("courseInput");
+    const error = document.getElementById("error");
+    const results = document.getElementById("results");
+
+    function escapeHtml(text) {
+      const div = document.createElement("div");
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const course = input.value.trim();
+
+      if (!course) {
+        error.textContent = "Please type a course first (for example, MATH 1451).";
+        results.innerHTML = "";
+        input.focus();
+        return;
+      }
+
+      error.textContent = "";
+      const safe = escapeHtml(course.toUpperCase());
+
+      results.innerHTML =
+        '<h2 class="results-title">Study groups for ' + safe + "</h2>" +
+        '<div class="group-card"><div>' + safe + " Exam Prep<small>Tue/Thu 6:00 PM · Library, 2nd floor</small></div><button type=\"button\">Join</button></div>" +
+        '<div class="group-card"><div>' + safe + " Online Review<small>Sundays 8:00 PM · Zoom</small></div><button type=\"button\">Join</button></div>";
+    });
+  </script>
+</body>
+</html>

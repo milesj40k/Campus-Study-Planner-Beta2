@@ -1,0 +1,27 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  min-height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+/* Hubot Sans isn't a public web font (it's GitHub's internal brand font),
+   so "Log Out" falls back to a clean system sans instead of silently
+   defaulting to plain Helvetica with no explanation. Swap in a real font
+   file here if you ever get a licensed copy of Hubot Sans. */
+@font-face {
+  font-family: "Hubot Sans-Regular";
+  src: local("Hubot Sans-Regular"), local("Helvetica Neue"), local("Arial");
+}
